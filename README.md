@@ -7,8 +7,12 @@ Rust 勉強中の自習課題。
 ## commadline
 
 ```sh
-cargo run -- ftp.host.url 21 username passwd path/to/root
+cargo run -- "ftp.host.url" "21" "username" "passwd" "path/to/root"
 ```
+
+Windowsコマンドプロンプトで`/`が特殊文字(コマンドオプションのスイッチ)として解釈されたり、
+Windowsに限らず文字の途中に半角スペースがあったりなどすると正常に引数がパーズされないので、
+ダブルクォーテーションで囲むこと。
 
 ## Thank you
 
